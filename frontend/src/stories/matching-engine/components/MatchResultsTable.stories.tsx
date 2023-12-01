@@ -16,15 +16,15 @@
 
 // MatchResultsTable.stories.tsx
 
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { MatchResultsTable } from 'demos/matching-engine/components/MatchResultsTable';
 import React from 'react';
 export default {
   title: 'matching-engine/components/MatchResultsTable',
   component: MatchResultsTable,
-} as ComponentMeta<typeof MatchResultsTable>;
+} as Meta<typeof MatchResultsTable>;
 
-const Template: ComponentStory<typeof MatchResultsTable> = (args) => <MatchResultsTable {...args} />;
+const Template: StoryFn<typeof MatchResultsTable> = (args) => <MatchResultsTable {...args} />;
 
 export const TextOnly = Template.bind({});
 TextOnly.args = {

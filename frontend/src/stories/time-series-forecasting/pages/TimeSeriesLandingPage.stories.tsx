@@ -16,7 +16,7 @@
 
 // Introduction.stories.tsx
 
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import DemoWrapper from 'common/components/DemoWrapper';
 import { forecastingDemoInfo } from 'DemoInfo';
 import Introduction2 from 'demos/time-series-forecasting/pages/Introduction2';
@@ -25,9 +25,9 @@ import React from 'react';
 export default {
   title: 'time-series-forecasting/pages/TimeSeriesLandingPage',
   component: Introduction2,
-} as ComponentMeta<typeof Introduction2>;
+} as Meta<typeof Introduction2>;
 
-const Template: ComponentStory<typeof Introduction2> = () => (
+const Template: StoryFn<typeof Introduction2> = () => (
   <DemoWrapper {...forecastingDemoInfo} initialTabIndex={1} />
 );
 export const Default = Template.bind({});

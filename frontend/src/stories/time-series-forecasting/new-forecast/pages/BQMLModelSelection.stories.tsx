@@ -16,7 +16,7 @@
 
 // BQMLModelSelection.stories.tsx
 
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import BQMLModelSelection from 'demos/time-series-forecasting/pages/new-forecast/steps/ModelSelectionTypes/BQMLModelSelection';
 import React from 'react';
 import selectedDataset from 'stories/time-series-forecasting/mocks/dataset.json';
@@ -24,9 +24,9 @@ import selectedDataset from 'stories/time-series-forecasting/mocks/dataset.json'
 export default {
   title: 'time-series-forecasting/New Forecast/pages/BQMLModelSelection',
   component: BQMLModelSelection,
-} as ComponentMeta<typeof BQMLModelSelection>;
+} as Meta<typeof BQMLModelSelection>;
 
-const Template: ComponentStory<typeof BQMLModelSelection> = (args) => <BQMLModelSelection {...args} />;
+const Template: StoryFn<typeof BQMLModelSelection> = (args) => <BQMLModelSelection {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

@@ -16,7 +16,7 @@
 
 // ForecastCompletedJobCard.stories.tsx
 
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import ImageClassificationFlow from 'demos/image-classification/pages/ImageClassificationFlow';
 import React from 'react';
 import {
@@ -30,9 +30,9 @@ import {
 export default {
   title: 'time-series-forecasting/New Forecast/NewForecastFlow',
   component: ImageClassificationFlow,
-} as ComponentMeta<typeof ImageClassificationFlow>;
+} as Meta<typeof ImageClassificationFlow>;
 
-const Template: ComponentStory<typeof ImageClassificationFlow> = () => <ImageClassificationFlow />;
+const Template: StoryFn<typeof ImageClassificationFlow> = () => <ImageClassificationFlow />;
 export const MockedSuccess = Template.bind({});
 MockedSuccess.parameters = {
   msw: { handlers: [getDatasets, submitForecast, getForecastJob, getPrediction, getEvaluation] },

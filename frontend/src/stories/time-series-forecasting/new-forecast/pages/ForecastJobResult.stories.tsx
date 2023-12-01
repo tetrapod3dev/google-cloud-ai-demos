@@ -16,7 +16,7 @@
 
 // JobResult.stories.tsx
 
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import JobResult from 'demos/time-series-forecasting/pages/new-forecast/ForecastJobResult';
 import React from 'react';
 import {
@@ -31,9 +31,9 @@ import {
 export default {
   title: 'time-series-forecasting/New Forecast/pages/ForecastJobResult',
   component: JobResult,
-} as ComponentMeta<typeof JobResult>;
+} as Meta<typeof JobResult>;
 
-const Template: ComponentStory<typeof JobResult> = (args) => <JobResult {...args} />;
+const Template: StoryFn<typeof JobResult> = (args) => <JobResult {...args} />;
 
 export const Completed = Template.bind({});
 Completed.args = {

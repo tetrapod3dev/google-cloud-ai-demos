@@ -16,7 +16,7 @@
 
 // ImageClassificationLandingPage.stories.tsx
 
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import DemoWrapper from 'common/components/DemoWrapper';
 import { matchingEngineDemoInfo } from 'DemoInfo';
 import React from 'react';
@@ -31,11 +31,9 @@ import {
 export default {
   title: 'matching-engine/pages/MatchingEngineLandingPage',
   component: DemoWrapper,
-} as ComponentMeta<typeof DemoWrapper>;
+} as Meta<typeof DemoWrapper>;
 
-const Template: ComponentStory<typeof DemoWrapper> = () => (
-  <DemoWrapper {...matchingEngineDemoInfo} initialTabIndex={1} />
-);
+const Template: StoryFn<typeof DemoWrapper> = () => <DemoWrapper {...matchingEngineDemoInfo} initialTabIndex={1} />;
 
 export const Mocked = Template.bind({});
 Mocked.parameters = {

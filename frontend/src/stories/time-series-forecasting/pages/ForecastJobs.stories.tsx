@@ -16,7 +16,7 @@
 
 // ForecastCompletedJobCard.stories.tsx
 
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import ForecastJobs from 'demos/time-series-forecasting/pages/forecast-jobs/ForecastJobs';
 import React from 'react';
 import {
@@ -31,9 +31,9 @@ import {
 export default {
   title: 'time-series-forecasting/pages/ForecastJobs',
   component: ForecastJobs,
-} as ComponentMeta<typeof ForecastJobs>;
+} as Meta<typeof ForecastJobs>;
 
-const Template: ComponentStory<typeof ForecastJobs> = () => <ForecastJobs />;
+const Template: StoryFn<typeof ForecastJobs> = () => <ForecastJobs />;
 export const MockedSuccess = Template.bind({});
 MockedSuccess.parameters = {
   msw: { handlers: [getPendingJobs, getCompletedJobs, getEvaluation, getPrediction] },
