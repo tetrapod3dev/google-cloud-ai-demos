@@ -151,8 +151,8 @@ export const PatternsStep = () => {
           <PredictionPlot
             groups={skis1JSON.groups}
             data={skis1JSON.data}
-            historyMinDate={skis1JSON.historyMinDate}
-            historyMaxDate={skis1JSON.historyMaxDate}
+            historyMinDate={skis1JSON.historyMinDate || undefined}
+            historyMaxDate={skis1JSON.historyMaxDate || undefined}
             predictionsMinDate={skis1JSON.predictionsMinDate || undefined}
             predictionsMaxDate={skis1JSON.predictionsMaxDate || undefined}
           />

@@ -2192,5 +2192,8 @@
       "Skis 1 (Suburbs)": 31.0
     }
   ],
-  "historyMaxDate": null
+  "historyMaxDate": null,
+  "historyMinDate": null,
+  "predictionsMinDate": null,
+  "predictionsMaxDate": null
 }

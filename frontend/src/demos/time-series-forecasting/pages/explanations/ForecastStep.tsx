@@ -43,6 +43,7 @@ interface ModelParameterInfo {
   name: string;
   description: string;
   value: string;
+  rationale: string;
 }
 
 const MODEL_PARAMETER_INFOS = [
