@@ -16,7 +16,7 @@
 
 // PredictionPlot.stories.tsx
 
-import { Meta, StoryFn } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import PredictionPlotForJob from 'demos/time-series-forecasting/components/PredictionPlotForJob';
 import React from 'react';
 import {
@@ -28,9 +28,9 @@ import {
 export default {
   title: 'time-series-forecasting/components/PredictionPlotForJob',
   component: PredictionPlotForJob,
-} as Meta<typeof PredictionPlotForJob>;
+} as ComponentMeta<typeof PredictionPlotForJob>;
 
-const Template: StoryFn<typeof PredictionPlotForJob> = (args) => <PredictionPlotForJob {...args} />;
+const Template: ComponentStory<typeof PredictionPlotForJob> = (args) => <PredictionPlotForJob {...args} />;
 
 export const Completed = Template.bind({});
 Completed.args = {

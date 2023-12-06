@@ -22,7 +22,7 @@ import PredictionPlot from 'common/components/prediction-plots/RechartsPredictio
 import predictionsLongJSON from 'demos/time-series-forecasting/pages/explanations/sample-data/predictions_skis_swimsuits_long.json';
 import * as React from 'react';
 
-export const ResultsStepInfo: MoreInfoCardProps | null = null;
+export const ResultsStepInfo: MoreInfoCardProps = null;
 
 export const ResultsStep = () => {
   return (

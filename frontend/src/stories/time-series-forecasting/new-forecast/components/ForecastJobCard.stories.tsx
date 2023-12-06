@@ -16,7 +16,7 @@
 
 // ForecastCompletedJobCard.stories.tsx
 
-import { Meta, StoryFn } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import ForecastJobCard from 'demos/time-series-forecasting/pages/forecast-jobs/ForecastJobCard';
 import React from 'react';
 import { getEvaluation, getPrediction } from 'stories/time-series-forecasting/mocks/handlers';
@@ -24,9 +24,9 @@ import { getEvaluation, getPrediction } from 'stories/time-series-forecasting/mo
 export default {
   title: 'time-series-forecasting/New Forecast/components/ForecastJobCard',
   component: ForecastJobCard,
-} as Meta<typeof ForecastJobCard>;
+} as ComponentMeta<typeof ForecastJobCard>;
 
-const Template: StoryFn<typeof ForecastJobCard> = (args) => <ForecastJobCard {...args} />;
+const Template: ComponentStory<typeof ForecastJobCard> = (args) => <ForecastJobCard {...args} />;
 
 export const Pending = Template.bind({});
 Pending.args = {

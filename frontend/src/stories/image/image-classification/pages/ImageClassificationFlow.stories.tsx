@@ -16,7 +16,7 @@
 
 // ImageClassificationFlow.stories.tsx
 
-import { Meta, StoryFn } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import ImageClassificationFlow from 'demos/image-classification/pages/ImageClassificationFlow';
 import React from 'react';
 import { getImageClassificationResults, getImages } from 'stories/image/mocks/handlers';
@@ -24,9 +24,9 @@ import { getImageClassificationResults, getImages } from 'stories/image/mocks/ha
 export default {
   title: 'image/image-classification/pages/ImageClassificationFlow',
   component: ImageClassificationFlow,
-} as Meta<typeof ImageClassificationFlow>;
+} as ComponentMeta<typeof ImageClassificationFlow>;
 
-const Template: StoryFn<typeof ImageClassificationFlow> = () => <ImageClassificationFlow />;
+const Template: ComponentStory<typeof ImageClassificationFlow> = () => <ImageClassificationFlow />;
 export const MockedSuccess = Template.bind({});
 MockedSuccess.parameters = {
   msw: { handlers: [getImages, getImageClassificationResults] },

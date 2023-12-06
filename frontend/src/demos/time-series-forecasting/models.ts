@@ -75,10 +75,7 @@ interface RechartsDataset {
 export interface RechartsPredictionAPIResponse {
   groups: string[];
   data: RechartsDataset[];
-  historyMinDate?: string;
   historyMaxDate?: string;
-  predictionsMinDate?: string;
-  predictionsMaxDate?: string;
 }
 
 export interface PlotlyPredictionLine {

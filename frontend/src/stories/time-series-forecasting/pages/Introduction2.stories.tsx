@@ -16,14 +16,14 @@
 
 // Introduction.stories.tsx
 
-import { Meta, StoryFn } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import Introduction2 from 'demos/time-series-forecasting/pages/Introduction2';
 import React from 'react';
 
 export default {
   title: 'time-series-forecasting/pages/Introduction2',
   component: Introduction2,
-} as Meta<typeof Introduction2>;
+} as ComponentMeta<typeof Introduction2>;
 
-const Template: StoryFn<typeof Introduction2> = () => <Introduction2 />;
+const Template: ComponentStory<typeof Introduction2> = () => <Introduction2 />;
 export const Default = Template.bind({});

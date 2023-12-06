@@ -16,14 +16,14 @@
 
 // JobResult.stories.tsx
 
-import { Meta, StoryFn } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { PatternsStep } from 'demos/time-series-forecasting/pages/explanations/PatternsStep';
 import React from 'react';
 
 export default {
   title: 'time-series-forecasting/explanation/pages/PatternsStep',
   component: PatternsStep,
-} as Meta<typeof PatternsStep>;
+} as ComponentMeta<typeof PatternsStep>;
 
-const Template: StoryFn<typeof PatternsStep> = () => <PatternsStep />;
+const Template: ComponentStory<typeof PatternsStep> = () => <PatternsStep />;
 export const Default = Template.bind({});

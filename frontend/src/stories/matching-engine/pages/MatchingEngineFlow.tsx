@@ -16,7 +16,7 @@
 
 // ImageClassificationFlow.stories.tsx
 
-import { Meta, StoryFn } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import MatchingEngineFlow from 'demos/matching-engine/pages/MatchingEngineFlow';
 import React from 'react';
 import {
@@ -30,9 +30,9 @@ import {
 export default {
   title: 'matching-engine/pages/MatchingEngineFlow',
   component: MatchingEngineFlow,
-} as Meta<typeof MatchingEngineFlow>;
+} as ComponentMeta<typeof MatchingEngineFlow>;
 
-const Template: StoryFn<typeof MatchingEngineFlow> = () => <MatchingEngineFlow />;
+const Template: ComponentStory<typeof MatchingEngineFlow> = () => <MatchingEngineFlow />;
 export const MockedSuccess = Template.bind({});
 MockedSuccess.parameters = {
   msw: { handlers: [getMatchRegistry, getItemsImages, getItemsWords, matchByIdWords, matchByTextWords] },

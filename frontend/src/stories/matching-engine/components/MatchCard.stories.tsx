@@ -17,15 +17,15 @@
 // MatchCard.stories.tsx
 
 import { List, ListItem } from '@mui/material';
-import { Meta, StoryFn } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { MatchCard } from 'demos/matching-engine/components/MatchCard';
 import React from 'react';
 export default {
   title: 'matching-engine/components/MatchCard',
   component: MatchCard,
-} as Meta<typeof MatchCard>;
+} as ComponentMeta<typeof MatchCard>;
 
-const Template: StoryFn<typeof MatchCard> = (args) => {
+const Template: ComponentStory<typeof MatchCard> = (args) => {
   return (
     <List sx={{ backgroundColor: 'red' }}>
       <ListItem key={1} sx={{ backgroundColor: 'blue', justifyContent: 'center' }}>

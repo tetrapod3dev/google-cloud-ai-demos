@@ -16,14 +16,14 @@
 
 // Introduction.stories.tsx
 
-import { Meta, StoryFn } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import DemoSelection from 'common/pages/DemoSelection';
 import React from 'react';
 
 export default {
   title: 'common/pages/DemoSelection',
   component: DemoSelection,
-} as Meta<typeof DemoSelection>;
+} as ComponentMeta<typeof DemoSelection>;
 
-const Template: StoryFn<typeof DemoSelection> = () => <DemoSelection />;
+const Template: ComponentStory<typeof DemoSelection> = () => <DemoSelection />;
 export const Default = Template.bind({});

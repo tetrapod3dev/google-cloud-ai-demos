@@ -16,7 +16,7 @@
 
 // ImageClassificationLandingPage.stories.tsx
 
-import { Meta, StoryFn } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import DemoWrapper from 'common/components/DemoWrapper';
 import { imageClassificationDemoInfo } from 'DemoInfo';
 import React from 'react';
@@ -25,9 +25,9 @@ import { getImageClassificationResults, getImages } from 'stories/image/mocks/ha
 export default {
   title: 'image/image-classification/pages/ImageClassificationLandingPage',
   component: DemoWrapper,
-} as Meta<typeof DemoWrapper>;
+} as ComponentMeta<typeof DemoWrapper>;
 
-const Template: StoryFn<typeof DemoWrapper> = () => (
+const Template: ComponentStory<typeof DemoWrapper> = () => (
   <DemoWrapper {...imageClassificationDemoInfo} initialTabIndex={1} />
 );
 export const MockedSuccess = Template.bind({});
