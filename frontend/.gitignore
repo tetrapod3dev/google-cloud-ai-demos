@@ -24,4 +24,5 @@ yarn-error.log*
 
 # storybook
 .storybook
-stories
+src/stories
+storybook-static
